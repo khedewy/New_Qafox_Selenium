@@ -1,0 +1,80 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+    <parameter name="browser" value="chrome" />
+    <test name="Regression Test in chrome">
+        <classes>
+            <class name="registerSuiteTests.RegisterWithValidData">
+                <methods>
+                    <include name="navigateToRegisterPage" />
+                    <include name="enterRegisterData" />
+                </methods>
+            </class>
+            <class name="registerSuiteTests.RegisterWithEmptyFirstName">
+                <methods>
+                    <include name="navigateToRegisterPage" />
+                    <include name="enterRegisterData" />
+                </methods>
+            </class>
+            <class name="registerSuiteTests.RegisterWithEmptyTelephone">
+                <methods>
+                    <include name="navigateToRegisterPage" />
+                    <include name="enterRegisterData" />
+                </methods>
+            </class>
+            <class name="registerSuiteTests.RegisterWithExistingEmail">
+                <methods>
+                    <include name="navigateToRegisterPage" />
+                    <include name="enterRegisterData" />
+                </methods>
+            </class>
+            <class name="registerSuiteTests.RegisterWithInvalidPassword">
+                <methods>
+                    <include name="navigateToRegisterPage" />
+                    <include name="enterRegisterData" />
+                </methods>
+            </class>
+            <class name="registerSuiteTests.RegisterWithoutAgreeingOnTerms">
+                <methods>
+                    <include name="navigateToRegisterPage" />
+                    <include name="enterRegisterData" />
+                </methods>
+            </class>
+            <class name="registerSuiteTests.RegisterWithInvalidEmail">
+                <methods>
+                    <include name="navigateToRegisterPage" />
+                    <include name="enterRegisterData" />
+                </methods>
+            </class>
+            <class name="LoginTestSuite.LoginWithValidData">
+                <methods>
+                    <include name="NavigateToLogin" />
+                    <include name="login" />
+                </methods>
+            </class>
+            <class name="LoginTestSuite.LoginWithInvalidEmail">
+                <methods>
+                    <include name="NavigateToLogin" />
+                    <include name="login" />
+                </methods>
+            </class>
+            <class name="LoginTestSuite.LoginWithEmptyEmail">
+                <methods>
+                    <include name="NavigateToLogin" />
+                    <include name="login" />
+                </methods>
+            </class>
+            <class name="LoginTestSuite.LoginWithInvalidPassword">
+                <methods>
+                    <include name="NavigateToLogin" />
+                    <include name="login" />
+                </methods>
+            </class>
+            <class name="LoginTestSuite.LoginWithNoExistingEmail">
+                <methods>
+                    <include name="NavigateToLogin" />
+                    <include name="login" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
